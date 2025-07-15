@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рофло-Сайт</title>
+</head>
+<body>
+
+  <div style="text-align:center; margin-top:100px;">
+    <button onclick="showMeme()" style="font-size:30px; padding:20px 40px; border-radius:10px; cursor:pointer;">
+  Нажми на меня
+</button>
+    <img id="meme" src="meme.jpg" style="display:none; max-width:90%;
+     margin:auto;">
+    <audio id="sound" src="meme.mp3" preload="auto"></audio>
+  </div>
+
+  <script>
+    function showMeme() {
+      document.getElementById('meme').style.display = 'block';
+      document.getElementById('sound').play();
+    }
+  </script>
+
+</body>
+</html>
